@@ -1,0 +1,14 @@
+<h1>New Game</h1>
+
+<div class="letters">
+  <% @letters.each do |letter| %>
+    <div class="letter"><%= letter %></div>
+  <% end %>
+</div>
+
+<form action="/score" method="post" data-turbo="false">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%# <input type="text" class="form-control" aria-describedby="button-addon2" name="user_question">
+  <button class="btn btn-primary" type="submit" id="button-addon2">Ask!</button> %>
+
+</form>
