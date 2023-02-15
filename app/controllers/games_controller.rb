@@ -14,11 +14,12 @@ class GamesController < ApplicationController
     @include = include?(@input_letters, @letters)
   end
 
-
   private
 
   def set_letters
-    %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z].sample(10)
+    vowals = %w[A B E I O U Y].sample(4)
+    consonants = %w[B C D F G H J K L M N P Q R S T V W X Z].sample(6)
+    (vowals + consonants).shuffle
   end
 
   def include?(input_letters, letters)
