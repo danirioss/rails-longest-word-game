@@ -9,8 +9,9 @@
 
   <form action="/score" method="post" data-turbo="false">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :letters, @letters %>
     <label><p>What is the longest word you can find:</p></label>
-    <input class="form" type="text" name="input_answer" id="input_answer">
-    <button type="submit">Play</button>
+    <input class="form" type="text" name="input_answer">
+    <input type="submit" value="Play" class="btn btn-secondary">
   </form>
 </div>
