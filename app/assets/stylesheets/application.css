@@ -16,12 +16,13 @@
  @import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Roboto&display=swap');
 
 body {
-  margin: 50px
+  margin: 250px 440px;
+  font-size: 20px;
 }
 
  h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 2em;
  }
 
  .letters {
@@ -38,4 +39,8 @@ body {
   display: flex;
   justify-content: center;
   box-shadow: 1px 2px 2px rgb(53, 52, 52);
+ }
+
+ .form {
+  width: 90%;
  }
